@@ -56,7 +56,7 @@ Run the quality checks with:
 ```bash
 pip install -r requirements-dev.txt
 ruff check .
-pytest -q
+python -m pytest -q
 ```
 
 ## Repository structure
