@@ -1,0 +1,6 @@
+[tool.ruff]
+line-length = 100
+extend-exclude = ["notebooks/original_google_capstone.ipynb"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

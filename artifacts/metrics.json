@@ -1,0 +1,65 @@
+{
+  "data": {
+    "source_rows": 14999,
+    "exact_repeated_rows_after_first": 3008,
+    "modeling_rows": 11991,
+    "employees_who_stayed": 10000,
+    "employees_who_left": 1991
+  },
+  "split": {
+    "train_rows": 9592,
+    "test_rows": 2399,
+    "test_fraction": 0.2,
+    "random_state": 42
+  },
+  "models": {
+    "prevalence_baseline": {
+      "cross_validation": {
+        "roc_auc_mean": 0.5,
+        "roc_auc_std": 0.0,
+        "average_precision_mean": 0.16607586393895413,
+        "average_precision_std": 0.0002293093927555898
+      },
+      "test": {
+        "roc_auc": 0.5,
+        "average_precision": 0.16590245935806586,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.8340975406419341
+      }
+    },
+    "logistic_regression": {
+      "cross_validation": {
+        "roc_auc_mean": 0.8343852636122202,
+        "roc_auc_std": 0.008551310965047873,
+        "average_precision_mean": 0.3757430340172666,
+        "average_precision_std": 0.012958582743949199
+      },
+      "test": {
+        "roc_auc": 0.8484061989105949,
+        "average_precision": 0.39464022899914625,
+        "precision": 0.4298469387755102,
+        "recall": 0.8467336683417085,
+        "f1": 0.5702199661590525,
+        "accuracy": 0.7882451021258858
+      }
+    },
+    "random_forest": {
+      "cross_validation": {
+        "roc_auc_mean": 0.9809096439312285,
+        "roc_auc_std": 0.00429792954167965,
+        "average_precision_mean": 0.9600459608492982,
+        "average_precision_std": 0.009651844573858153
+      },
+      "test": {
+        "roc_auc": 0.9811840311000278,
+        "average_precision": 0.9660707187240697,
+        "precision": 0.9891891891891892,
+        "recall": 0.9195979899497487,
+        "f1": 0.953125,
+        "accuracy": 0.9849937473947478
+      }
+    }
+  }
+}
